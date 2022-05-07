@@ -1,0 +1,54 @@
+<html>
+
+<head>
+    <title>NFT MINT</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script
+        src="https://cdn.jsdelivr.net/gh/ethereumjs/browser-builds/dist/ethereumjs-tx/ethereumjs-tx-1.3.3.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/web3/1.6.1/web3.min.js"
+        integrity="sha512-5erpERW8MxcHDF7Xea9eBQPiRtxbse70pFcaHJuOhdEBQeAxGQjUwgJbuBDWve+xP/u5IoJbKjyJk50qCnMD7A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="text/javascript" src="index.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <button id='loginButton' onclick="" class="mx-auto rounded-md p-2 bg-blue-500 text-white">
+            Login with MetaMask
+        </button>
+        <button id='mintButton' onclick="mint()" class="mx-auto rounded-md p-2 bg-blue-500 text-white">
+            MINT
+        </button>
+
+    </nav>
+
+    <br>
+    <p id='userWallet' class='text-lg text-gray-600 my-2' align="center"></p>
+    <p id='minting' class='text-lg text-gray-600 my-2' align="center"></p>
+    <br>
+    <br>
+
+    <div class="grid-container">
+        <div class="item1"><img src="/images/OTH Logo Full.png" alt=""></div>
+        <div class="item1"><img src="/images/OTH Logo Mini.png" alt=""></div>
+        <div class="item1"><img src="/images/OTH Poster Black.png" alt=""></div>
+        <div class="item1"><img src="/images/OTH Poster Blue.png" alt=""></div>
+        <div class="item1"><img src="/images/OTH Poster Promo.png" alt=""></div>
+        <div class="item1"><img src="/images/OTH Poster Yellow.png" alt=""></div>
+    </div>
+
+    <script>
+        window.addEventListener('DOMContentLoaded', () => {
+            console.log("Init DOM");
+            toggleButton()
+            console.log("End DOM");
+        });
+    </script>
+</body>
+
+
+
+</html>
